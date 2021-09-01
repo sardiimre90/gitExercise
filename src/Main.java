@@ -16,6 +16,8 @@ public class Main {
         max();
         System.out.println("----------------");
         odd();
+        System.out.println("----------------");
+        sumOdd();
         }
 
     public static int[] fillArray() {
@@ -77,5 +79,16 @@ public class Main {
         }
         System.out.println("Páratlan számok: " + count);
         return count;
+    }
+
+    public static int sumOdd() {
+        int sum = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] % 2 != 0) {
+                sum += array[i];
+            }
+        }
+        System.out.println("Páratlan számok: " + sum);
+        return sum;
     }
 }
