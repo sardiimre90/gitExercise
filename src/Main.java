@@ -12,7 +12,8 @@ public class Main {
         min();
         System.out.println("----------------");
         even();
-
+        System.out.println("----------------");
+        max();
         }
 
     public static int[] fillArray() {
@@ -48,5 +49,18 @@ public class Main {
         return count;
 
 
+    }
+
+    public static int max() {
+
+        int max = array[0];
+
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] > max) {
+                max = array[i];
+            }
+        }
+        System.out.println("A legnagyobb: " +max);
+        return max;
     }
 }
