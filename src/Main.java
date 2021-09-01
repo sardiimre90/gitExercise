@@ -20,6 +20,9 @@ public class Main {
         sumOdd();
         System.out.println("----------------");
         sumEven();
+        System.out.println("----------------");
+        System.out.println("Minden rendben müködött?");
+
         }
 
     public static int[] fillArray() {
