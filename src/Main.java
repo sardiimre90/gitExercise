@@ -10,6 +10,8 @@ public class Main {
         fillArray();
         System.out.println("----------------");
         min();
+        System.out.println("----------------");
+        even();
 
         }
 
@@ -27,8 +29,24 @@ public class Main {
         for (int i = 0; i < array.length; i++) {
             if (array[i] < min) {
                 min = array[i];
-                System.out.println("A legkisebb: " +min);
-                }
-            } return min;
+                 }
+             }
+        System.out.println("A legkisebb: " +min);
+        return min;
         }
+
+    public static int even () {
+
+        int count = 0;
+
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] % 2 == 0) {
+                count++;
+            }
+        }
+        System.out.println("Páros számok: " + count);
+        return count;
+
+
     }
+}
