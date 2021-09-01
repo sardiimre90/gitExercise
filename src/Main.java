@@ -18,6 +18,7 @@ public class Main {
         odd();
         System.out.println("----------------");
         sumOdd();
+        System.out.println("----------------");
         }
 
     public static int[] fillArray() {
