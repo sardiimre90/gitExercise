@@ -18,6 +18,8 @@ public class Main {
         odd();
         System.out.println("----------------");
         sumOdd();
+        System.out.println("----------------");
+        sumEven();
         }
 
     public static int[] fillArray() {
@@ -88,7 +90,18 @@ public class Main {
                 sum += array[i];
             }
         }
-        System.out.println("Páratlan számok: " + sum);
+        System.out.println("Páratlan számok összege: " + sum);
+        return sum;
+    }
+
+    public static int sumEven() {
+        int sum = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] % 2 == 0) {
+                sum += array[i];
+            }
+        }
+        System.out.println("Páros számok összege: " + sum);
         return sum;
     }
 }
